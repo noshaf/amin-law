@@ -1,212 +1,816 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Amin Law</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<html lang="en">
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Traffic Law, DUI, Personal Injury, Law, Lawyer, Attorney, Amin, Haitham, Nguyen, Attorney Appearance" />
+    <meta name="description" content="">
+    <meta name="author" content="pebas - http://themeforest.net/user/pebas/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+    <!-- Title -->
+    <title>AN Legal Firm</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico">
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
+    <!-- Template -->
+    <link href="style.css" rel="stylesheet">
 
-      #footer {
-        clear: both;
-      }
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+</script>
+<![endif]-->
+</head>
 
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
+<body>
 
+    <!-- ==================================================================================================================================
+HEADER
+======================================================================================================================================= -->
 
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
+    <section class="home-header">
 
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
 
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
+                    <!-- logo -->
+                    <div class="col-md-4 col-sm-4 col-xs-5">
+                        <div class="logo">
+                            <a href="index.html">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- .logo -->
 
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
+                    <!-- quick contact -->
+                    <div class="col-md-8 col-sm-8 col-xs-7">
+                        <div class="quick-contact text-right">
+                            <p class="phone">925.497.0661</p>
+                            <p class="phone">415.671.9901</p>
+                            <p>Serving The San Francisco Bay Area</p>
+                        </div>
+                    </div>
+                    <!-- .quick contact -->
 
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Navigation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Home</a></li>
-              <li><a href="http://api.rubyonrails.org/">About</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Amin Law</h1>
-          <h2>Driving Under the Influence and Traffic Ticket Specialists</h2>
+                </div>
+            </div>
         </div>
+        <!-- .header -->
 
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+        <!-- intro content -->
+        <div class="container">
+            <div class="row">
+
+                <!-- content -->
+                <div class="col-md-12">
+                    <div class="intro-content text-center">
+                        <h1>
+                            <strong>
+                              WE WIN OR IT'S FREE<br />
+                              <span class="rotate">TRAFFIC LAW, DUI LAW, PERSONAL INJURY</span></strong>
+                        </h1>
+                        <a href="#" class="btn btn-default button-white"> Free Case Evaluation<i class="fa fa-sign-out"></i>
+                              </a>
+                    </div>
+                </div>
+                <!-- .content -->
+
+            </div>
+        </div>
+        <!-- .intro content -->
+
+        <!-- navigation scrolled -->
+        <div class="main-nav scrolled">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container_toggle container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle button-white menu" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <!-- smaller logo -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" class="img-responsive" title="" alt="" />
+                        </a>
+                        <!-- .smaller logo -->
+
+                    </div>
+                    <div class="collapse navbar-collapse">
+
+                        <!-- main nav -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">TRAFFIC LAW</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">DUI LAW</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PERSONAL INJURY</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">ATTORNEY APPEARANCE</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"> CONTACT </a>
+                            </li>
+                        </ul>
+                        <!-- .main nav -->
+
+                        <!-- quick contact -->
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li>
+                                <div class="quick-contact">
+                                    <p class="phone">774.342.0700</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- quick contact -->
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- .navigation scrolled -->
+
+    </section>
+
+    <!-- ==================================================================================================================================
+WELCOME SECTION
+======================================================================================================================================= -->
+    <section>
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">
+                        <strong>WELCOME TO A&N LAW FIRM</strong>
+                    </h2>
+                    <h6 class="subheading text-center"><i>We are here to serve you. We specialize in the areas of Traffic Law, DUI Law and Personal Injury. We will win your case or your money back.</i>
+                    </h6>
+                </div>
+            </div>
+            <!-- title -->
+
+            <!-- separator-->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="divider" />
+                </div>
+            </div>
+            <!-- .separator -->
+
+            <!-- practice boxes -->
+            <div class="row">
+
+                <!-- 1 -->
+                <div class="col-md-4">
+                    <div class="practice-box">
+                        <a href="#">
+                            <div class="practice-box-wrap">
+                                <i class="fa fa-road"></i>
+                                <p>
+                                    <strong>TRAFFIC LAW</strong>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-4">
+                    <div class="practice-box">
+                        <a href="#">
+                            <div class="practice-box-wrap">
+                                <i class="fa fa-times"></i>
+                                <p>
+                                    <strong>DUI LAW</strong>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-4">
+                    <div class="practice-box">
+                        <a href="#">
+                            <div class="practice-box-wrap">
+                                <i class="fa fa-user"></i>
+                                <p>
+                                    <strong>PERSONAL INJURY</strong>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+TESTIMONIALS
+======================================================================================================================================= -->
+
+    <section class="case-results">
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="white-text text-left">
+                        <strong>TESTIMONIALS</strong>
+                        <a href="#" class="pull-right testimonial-link">
+                            <i class="fa fa-sign-out"></i>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <!-- .title -->
+
+            <!-- testimonial carousel -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" id="testimonials-rotate">
+
+                        <!-- indicators -->
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#testimonials-rotate">
+                            </li>
+                            <li data-slide-to="1" data-target="#testimonials-rotate">
+                            </li>
+                            <li data-slide-to="2" data-target="#testimonials-rotate">
+                            </li>
+                        </ol>
+                        <!-- .indicators -->
+
+                        <!-- carousel -->
+                        <div class="carousel-inner">
+
+                            <!-- 1 -->
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="testimonials">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/testimonials.png" alt="" title="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h6 class="subheading white-text"><i>&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&quot;
+                                                                              </i>
+                                                    </h6>
+                                                    <h6 class="white-text">Mark Markovic</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .1 -->
+
+                            <!-- 1 -->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="testimonials">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/testimonials.png" alt="" title="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h6 class="subheading white-text"><i>&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&quot;
+                                                                              </i>
+                                                    </h6>
+                                                    <h6 class="white-text">Mark Markovic</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .1 -->
+
+                            <!-- 1 -->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="testimonials">
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" src="images/testimonials.png" alt="" title="" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h6 class="subheading white-text"><i>&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&quot;
+                                                                              </i>
+                                                    </h6>
+                                                    <h6 class="white-text">Mark Markovic</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .1 -->
+
+                        </div>
+                        <!-- .carousel -->
+
+                        <!-- next & prev 
+        <div class="pull-right">
+          <a href="#testimonials-rotate"  data-slide="prev">
+          <i class="white-text fa fa-angle-left"></i>
+          </a>
+          <a href="#testimonials-rotate" data-slide="next">
+          <i class="white-text fa fa-angle-right"></i>
+          </a>
+        </div>
+        .next & prev -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- .testimonial carousel -->
+
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+LAWYERS
+======================================================================================================================================= -->
+    <section>
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">
+                        <strong>OUR LAWYERS</strong>
+                    </h2>
+                    <h6 class="subheading text-center"><i>We are a full service, general practice law firm, but we specialize in the areas of residential 
+                              and commercial real estate transactions and litigation and commercial transactions and litigation.</i>
+                    </h6>
+                </div>
+            </div>
+            <!-- title -->
+
+            <!-- separator-->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="divider" />
+                </div>
+            </div>
+            <!-- .separator -->
+
+            <!-- practice boxes -->
+            <div class="row">
+
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="practice-box team">
+                        <div class="practice-box-wrap">
+                            <div class="media">
+                                <img src="images/team_1.png" title="" alt="" />
+                            </div>
+                            <div class="content">
+                                <p class="name">
+                                    <strong>Mark Markovic</strong>
+                                </p>
+                                <p class="position">Litigation, Real Estate & Commercial</p>
+                            </div>
+                        </div>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="practice-box team">
+                        <div class="practice-box-wrap">
+                            <div class="media">
+                                <img src="images/team_2.png" title="" alt="" />
+                            </div>
+                            <div class="content">
+                                <p class="name">
+                                    <strong>Mark Markovic</strong>
+                                </p>
+                                <p class="position">Litigation, Real Estate & Commercial</p>
+                            </div>
+                        </div>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="practice-box team">
+                        <div class="practice-box-wrap">
+                            <div class="media">
+                                <img src="images/team_3.png" title="" alt="" />
+                            </div>
+                            <div class="content">
+                                <p class="name">
+                                    <strong>Mark Markovic</strong>
+                                </p>
+                                <p class="position">Litigation, Real Estate & Commercial</p>
+                            </div>
+                        </div>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="practice-box team">
+                        <div class="practice-box-wrap">
+                            <div class="media">
+                                <img src="images/team_4.png" title="" alt="" />
+                            </div>
+                            <div class="content">
+                                <p class="name">
+                                    <strong>Mark Markovic</strong>
+                                </p>
+                                <p class="position">Litigation, Real Estate & Commercial</p>
+                            </div>
+                        </div>
+                        <div class="practice-box-button">
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .1-->
+
+            </div>
+            <!-- .practice boxes -->
+
+            <!-- more button -->
+            <div class="row text-center">
+                <a href="#" class="btn btn-default button-dark text-center"> ALL LAWYERS </a>
+            </div>
+            <!-- .more button -->
+
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+CASE RESULTS
+======================================================================================================================================= -->
+
+    <section class="case-results">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="text-center white-text">Residential</h6>
+                    <h2 class="text-center white-text">
+                        <strong>$
+                            <span class="counter">340,000</span>
+                        </strong>
+                    </h2>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-center white-text">Commercial</h6>
+                    <h2 class="text-center white-text">
+                        <strong>$
+                            <span class="counter">1,880,350</span>
+                        </strong>
+                    </h2>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-center white-text">Business</h6>
+                    <h2 class="text-center white-text">
+                        <strong>$
+                            <span class="counter">648,000</span>
+                        </strong>
+                    </h2>
+                </div>
+                <div class="col-md-3">
+                    <div class="big-button text-center">
+                        <a href="#">
+                            <strong>See All Case Results</strong><i class="fa fa-2x fa-sign-out"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+FOOTER
+======================================================================================================================================= -->
+    <section class="footer">
+        <div class="container">
+
+            <!-- widgets -->
+            <div class="row">
+
+                <!-- 1 -->
+                <div class="col-md-3">
+
+                    <!-- widget -->
+                    <div class="widget">
+
+                        <!-- widget title -->
+                        <div class="widget-title">
+                            <h4>FAQ</h4>
+                        </div>
+                        <!-- .widget title -->
+
+                        <!-- widget content -->
+                        <div class="widget-content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Lorem ipsum dolor sit?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Consectutor adiscipit elit?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Voluptatem sed do?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Eventis partis vivare? </a>
+                                </li>
+                                <li>
+                                    <a href="#">Que dolore sed mauritinam?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dolve aquasianti?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .widget content -->
+
+                    </div>
+                    <!-- .widget -->
+
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+
+                    <!-- widget -->
+                    <div class="widget">
+
+                        <!-- widget title -->
+                        <div class="widget-title">
+                            <h4>MENU</h4>
+                        </div>
+                        <!-- .widget title -->
+
+                        <!-- widget content -->
+                        <div class="widget-content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lawyers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials </a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .widget content -->
+
+                    </div>
+                    <!-- .widget -->
+
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+
+                    <!-- widget -->
+                    <div class="widget">
+
+                        <!-- widget title -->
+                        <div class="widget-title">
+                            <h4>LAWYERS</h4>
+                        </div>
+                        <!-- .widget title -->
+
+                        <!-- widget content -->
+                        <div class="widget-content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Mark Markovic</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bernard Schreder</a>
+                                </li>
+                                <li>
+                                    <a href="#">Miroslav Bernardo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Julia Apstain </a>
+                                </li>
+                                <li>
+                                    <a href="#">Walk Masterager</a>
+                                </li>
+                                <li>
+                                    <a href="#">Peter Svensonsen</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .widget content -->
+
+                    </div>
+                    <!-- .widget -->
+
+                </div>
+                <!-- .1-->
+
+                <!-- 1 -->
+                <div class="col-md-3">
+
+                    <!-- widget -->
+                    <div class="widget">
+
+                        <!-- widget title -->
+                        <div class="widget-title">
+                            <h4>CONTACT INFO</h4>
+                        </div>
+                        <!-- .widget title -->
+
+                        <!-- widget content -->
+                        <div class="widget-content">
+                            <p>
+                                <strong>LEX Creative HTML Template</strong>
+                                <br />36th Street, New England 234
+                                <br />220345, UNITED STATES</p>
+                            <p>
+                                <strong>Phone:</strong>0344.2342.23423
+                                <br />
+                                <strong>Fax:</strong>0344.2342.23345
+                                <br />
+                                <strong>Email:</strong>youremail@email.com</p>
+                        </div>
+                        <!-- .widget content -->
+
+                    </div>
+                    <!-- .widget -->
+
+                </div>
+                <!-- .1-->
+
+            </div>
+            <!-- .widgets -->
+
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+NEWSLETTER
+======================================================================================================================================= -->
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+
+                <!-- newsletter field -->
+                <div class="col-md-12">
+                    <form class="form-horizontal clearfix" role="form">
+                        <div class="form-group clearfix">
+                            <label for="newsletter" class="col-md-5 control-label text-left">SIGN UP FOR NEWSLETTER</label>
+                            <div class="col-md-7">
+                                <input type="email" class="form-control" id="newsletter" placeholder="Type your email here and hit enter/return to subscribe...">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- .newsletter field -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+SHARE
+======================================================================================================================================= -->
+    <section class="footer">
+        <div class="container">
+
+            <!-- social -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social text-center">
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- .social -->
+
+            <!-- copyrights -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyrights">
+                        <p class="text-center">@copy All rights reserved - LEX HTML 2014 - by pebas</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .copyrights -->
+
+        </div>
+    </section>
+
+    <!-- ==================================================================================================================================
+TO TOP
+======================================================================================================================================= -->
+    <a href="#_" class="to-top"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.v11.1.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Include all template js plugins -->
+    <script src="js/bootstrap-dropdown-multilevel.js"></script>
+    <script src="js/jpreloader.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.simple-text-rotator.min.js"></script>
+
+    <!-- Include all template custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
 </html>
