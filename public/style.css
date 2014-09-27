@@ -565,7 +565,6 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     color: #ffffff;
 }
 .testimonials .media-body {
-    background-color: rgba(0, 0, 0, 0.64);
     padding-left: 40px;
 }
 .testimonials .media.single-testimonials .media-body {
