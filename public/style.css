@@ -220,11 +220,12 @@ button.navbar-toggle.button-white.menu {
         font-size: 28px;
     }
 }
-/*********** intro content ************/
+/*********** logo ************/
 .img-responsive.main,
 .img-responsive.second {
     margin-top: -25px;
 }
+/*********** intro content ************/
  .intro-content {
     padding: 180px 0px 140px 0px;
 }
@@ -564,6 +565,7 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     color: #ffffff;
 }
 .testimonials .media-body {
+    background-color: rgba(0, 0, 0, 0.64);
     padding-left: 40px;
 }
 .testimonials .media.single-testimonials .media-body {
