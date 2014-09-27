@@ -221,6 +221,9 @@ button.navbar-toggle.button-white.menu {
     }
 }
 /*********** intro content ************/
+.img-responsive.main {
+    margin-top: -25px;
+}
  .intro-content {
     padding: 180px 0px 140px 0px;
 }
