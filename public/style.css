@@ -490,6 +490,9 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
 .practice-box.single.traffic {
     background-color: #F0E526;
 }
+.practice-box.single.dui {
+    background-color: #DE3333;
+}
 .practice-box a {
     display: block;
     width: 100%;
