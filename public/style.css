@@ -84,7 +84,6 @@ hr.divider {
     text-align: center;
     height: 4px;
     border-bottom: 1px solid #e5e5e5;
-    margin: 30px 0px 60px 0px;
     clear: both;
 }
 .white-text {
@@ -487,6 +486,9 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
 }
 .practice-box.single {
     margin-bottom: 0px;
+}
+.practice-box.single.traffic {
+    background-color: #F0E526;
 }
 .practice-box a {
     display: block;
