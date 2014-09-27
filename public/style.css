@@ -205,6 +205,10 @@ button.navbar-toggle.button-white.menu {
     margin-bottom: 10px;
     color: #ffffff;
 }
+.main-nav.scrolled .quick-contact p.phone.small{
+    margin-top: -10px;
+    font-size: 18px;
+}
 @media (max-width: 769px) {
     .quick-contact p.phone {
         font-size: 22px;
