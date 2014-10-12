@@ -238,3 +238,10 @@ jQuery(document).ready(function($) {
     };
 
 });
+
+$("#subscription").submit(function(){
+    $.post("/subscriptions", {email: $("#newsletter").val()}, function(response) {
+        console.log(response);
+    }, 'json');
+    event.preventDefault();
+});

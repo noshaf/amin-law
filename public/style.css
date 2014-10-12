@@ -643,7 +643,7 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
 .newsletter input[type="email"] {
     border-radius: 0;
     font-size: 13px;
-    color: #ffffff;
+    color: #000;
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
