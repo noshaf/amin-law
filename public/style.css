@@ -496,14 +496,21 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
 .practice-box.single.personal-injury {
     background-color: #1975FF;
 }
+
+.practice-box.single.attorney-appearance {
+    background-color: #202020;
+}
+.practice-box-wrap.attorney-appearance {
+    color: #fff;
+}
 .practice-box a {
     display: block;
     width: 100%;
     height: auto;
 }
 .practice-box a:hover .practice-box-wrap {
-    background: #202020;
-    color: #ffffff;
+    background: #fff;
+    color: #202020;
     transition: all 0.3s ease-in-out;
 }
 .practice-box a:hover {
