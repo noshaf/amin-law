@@ -58,5 +58,8 @@ module AminLaw
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Mailer
+    config.action_mailer.default_content_type = 'text/html'
   end
 end

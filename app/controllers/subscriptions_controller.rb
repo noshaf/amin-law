@@ -1,9 +1,4 @@
 class SubscriptionsController < ApplicationController
-  def send_case
-  	# puts "hello"
-  	# CaseMailer.case_notification(@subscription).deliver
-  end
-
   def create
   	@subscription = Subscription.new()
     @subscription.email = params[:email]

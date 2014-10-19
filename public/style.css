@@ -1042,3 +1042,9 @@ a.reply i {
     text-align: center;
     margin: 0px auto;
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 950px;
+    }
+}
