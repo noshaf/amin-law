@@ -2,6 +2,8 @@ AminLaw::Application.routes.draw do
   
   resources :subscriptions 
 
+  match 'case_evaluation' => 'forms#case_evaluation'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
         //send the feedback e-mail
         $.ajax({
             type: "POST",
-            url: "php/sendmail.php",
+            url: "case_evaluation",
             data: $("#feedbackForm").serialize(),
             success: function(data) {
                 contactForm.addAjaxMessage(data.message, false);
@@ -233,7 +233,9 @@ jQuery(document).ready(function($) {
             $input.parent('.form-group').addClass('has-error');
         },
         addAjaxMessage: function(msg, isError) {
-            $("#feedbackSubmit").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + $('<div/>').text(msg).html() + '</div>');
+            window.scrollTo(0, 0);
+            $(".subheading").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
+            setTimeout(function(){window.location = "http://anlegalfirm.com"}, 3000);
         }
     };
 
@@ -242,6 +244,7 @@ jQuery(document).ready(function($) {
 $("#subscription").submit(function(){
     $.post("/subscriptions", {email: $("#newsletter").val()}, function(response) {
     }, 'json');
-    
+    alert("Thanks for signing up!");
+    $("#newsletter").val("");
     event.preventDefault();
 });
