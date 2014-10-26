@@ -234,7 +234,7 @@ jQuery(document).ready(function($) {
         },
         addAjaxMessage: function(msg, isError) {
             window.scrollTo(0, 0);
-            $(".subheading").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
+            $("#message").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + 'Thanks! We will get back to you as soon as possible.' + '</div>');
             setTimeout(function(){window.location = "http://anlegalfirm.com"}, 3000);
         }
     };
