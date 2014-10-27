@@ -60,6 +60,6 @@ module AminLaw
     config.assets.version = '1.0'
 
     # Mailer
-    config.action_mailer.default_content_type = 'text/html'
+    config.action_mailer.default :content_type => 'text/html'
   end
 end

@@ -509,10 +509,17 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     height: auto;
 }
 .practice-box a:hover .practice-box-wrap {
-    background: #fff;
+    background: #202020;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.practice-box a:hover .practice-box-wrap.attorney-appearance {
+    background-color: #fff;
     color: #202020;
     transition: all 0.3s ease-in-out;
 }
+
 .practice-box a:hover {
     transition: all 0.3s ease-in-out;
 }
