@@ -224,6 +224,10 @@ button.navbar-toggle.button-white.menu {
 .img-responsive.second {
     margin-top: -25px;
 }
+
+.img-responsive.main {
+    margin-left: -40px
+}
 /*********** intro content ************/
  .intro-content {
     padding: 180px 0px 140px 0px;
@@ -329,7 +333,7 @@ button.navbar-toggle.button-white.menu {
     background-color: transparent
 }
 .main-nav.scrolled img {
-    max-width: 110px;
+    max-width: 190px;
 }
 .main-nav.scrolled .quick-contact {
     margin-top: 30px;
