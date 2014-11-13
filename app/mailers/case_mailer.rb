@@ -9,4 +9,7 @@ class CaseMailer < ActionMailer::Base
     mail(:to => 'haitham.amin@hotmail.com', :subject => "You have recieved a case evaluation")
   end
 
+  def app_notification(form)
+
+  end
 end

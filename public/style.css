@@ -488,17 +488,17 @@ nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
 .practice-box.single {
     margin-bottom: 0px;
 }
-.practice-box.single.traffic {
+.practice-box.traffic {
     background-color: #F0E526;
 }
-.practice-box.single.dui {
+.practice-box.dui {
     background-color: #DE3333;
 }
-.practice-box.single.personal-injury {
+.practice-box.personal-injury {
     background-color: #1975FF;
 }
 
-.practice-box.single.attorney-appearance {
+.practice-box.attorney-appearance {
     background-color: #202020;
 }
 .practice-box-wrap.attorney-appearance {
