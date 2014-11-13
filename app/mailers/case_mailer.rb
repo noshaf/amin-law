@@ -1,5 +1,5 @@
 class CaseMailer < ActionMailer::Base
-  default from: "CaseEvaluations@anlegalfim.com"
+  default from: "CaseEvaluations@anlegalfirm.com"
 
   def case_notification(form)
   	@name = form[:name]
@@ -9,4 +9,8 @@ class CaseMailer < ActionMailer::Base
     mail(:to => 'haitham.amin@hotmail.com', :subject => "You have recieved a case evaluation")
   end
 
+  def app_notification(form)
+  	@info = form
+  	mail(:to => 'haitham.amin@hotmail.com', :subject => "You have recieved a attorney appearance request")
+  end
 end
