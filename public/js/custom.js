@@ -193,6 +193,22 @@ jQuery(document).ready(function($) {
         });
         return false;
     });
+
+    $("#attorneyAppearanceSubmit").click(function() {
+        //send the feedback e-mail
+        $.ajax({
+            type: "POST",
+            url: "app_submit",
+            data: $("#attorneyAppearance").serialize(),
+            complete: function() {
+                alert("Thanks! We will get back to you as soon as possible.");
+                window.scrollTo(0, 0);
+
+                $('#attorneyAppearance input,textarea').val("");
+            }
+        });
+    });
+
     $('#feedbackForm input').change(function() {
         var asteriskSpan = $(this).siblings('.glyphicon-asterisk');
         if ($(this).val()) {

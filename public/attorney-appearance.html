@@ -113,7 +113,7 @@ BREADCRUMBS
     <section class="case-results inner">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="message-submit">
                     <h1 class="text-center white-text">Attorney Appearance</h1>
                     <h6 class="subheading white-text text-center"><i>Full service general practice law firm</i>
                     </h6>
@@ -271,23 +271,102 @@ PRACTICE AREAS
             <div class="row">
                 <div id="contact_form">
                     <form role="form" id="attorneyAppearance">
-                        
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="fname">First Name</label>
+                                <input type="text" class="form-control" id="fname" name="fname">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="lname">Last Name</label>
+                                <input type="text" class="form-control" id="lname" name="lname">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="address">Street Address</label>
+                                <input type="text" class="form-control" id="address" name="address">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="city">City</label>
+                                <input type="text" class="form-control" id="city" name="city">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="zip">Zip Code</label>
+                                <input type="text" class="form-control" id="zip" name="zip">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="firm">Firm</label>
+                                <input type="text" class="form-control" id="firm" name="firm">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="barNum">Attorney of Record Bar #</label>
+                                <input type="text" class="form-control" id="barNum" name="barNum">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="caseName">Case Name</label>
+                                <input type="text" class="form-control" id="caseName" name="caseName">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label class="date" for="date">Appearance Date (MM/DD/YYYY)</label>
+                                <input type="text" class="form-control" id="date" name="date">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="hearingType">Hearing Type</label>
+                                <input type="text" class="form-control" id="hearingType" name="hearingType">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="time">Hearing Time (H:MM AM/PM)</label>
+                                <input type="text" class="form-control" id="time" name="time">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="court">Court</label>
+                                <input type="text" class="form-control" id="court" name="court">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="dept">Dept</label>
+                                <input type="text" class="form-control" id="dept" name="dept">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="caseNumber">Case Number</label>
+                                <input type="text" class="form-control" id="caseNumber" name="caseNumber">
+                            </div>
+                        </div>
+
+                       <div class="col-md-6">
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="fileNumber">File Number</label>
+                                <input type="text" class="form-control" id="fileNumber" name="fileNumber">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group has-feedback">
+                            <label class="control-label" for="message">Message</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Please be desscriptive as much as you can..."></textarea>
+                            <span class="fa fa-pencil form-control-feedback"></span>
+                            <span class="help-block">Please enter a message.</span>
+                            </div>
+                            <button type="submit" id="attorneyAppearanceSubmit" class="btn btn-default button-dark" data-loading-text="Sending...">Submit<i class="fa fa-sign-out"></i>
+                            </button>
+                        </div>  
                     </form>
                 </div>
-                <div class="col-md-4">
-                </div>
-
-                <div class="col-md-4">
-                </div>
-
-                <div class="col-md-4">
-                </div>
-
-                <div class="col-md-12">
-                </div>
             </div>
-
-        </div>
     </section>
 
     <!-- ==================================================================================================================================

@@ -4,6 +4,9 @@ AminLaw::Application.routes.draw do
 
   match 'case_evaluation' => 'forms#case_evaluation'
 
+  match 'app_submit' => 'forms#app_submit'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
