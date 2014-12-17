@@ -6,11 +6,11 @@ class CaseMailer < ActionMailer::Base
   	@phone = form[:phone]
   	@email = form[:email]
   	@message = form[:message]
-    mail(:to => 'noshaf@gmail.com', :subject => "You have recieved a case evaluation")
+    mail(:to => 'haitham.amin@hotmail.com', :subject => "You have recieved a case evaluation")
   end
 
   def app_notification(form)
   	@info = form
-  	mail(:to => 'noshaf@gmail.com', :subject => "You have recieved a attorney appearance request")
+  	mail(:to => 'haitham.amin@hotmail.com', :subject => "You have recieved a attorney appearance request")
   end
 end
