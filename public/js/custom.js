@@ -196,17 +196,28 @@ jQuery(document).ready(function($) {
 
     $("#attorneyAppearanceSubmit").click(function() {
         //send the feedback e-mail
-        $.ajax({
-            type: "POST",
-            url: "app_submit",
-            data: $("#attorneyAppearance").serialize(),
-            complete: function() {
-                alert("Thanks! We will get back to you as soon as possible.");
-                window.scrollTo(0, 0);
-
-                $('#attorneyAppearance input,textarea').val("");
+        var valid = true;
+        $('#attorneyAppearance').each(function() {
+            if ( $(this).val() === '' ) {
+                alert("ERROR: You must fill out all of the form.");
+                valid = false;
+                return;
             }
         });
+
+        if (valid) {
+            $.ajax({
+                type: "POST",
+                url: "app_submit",
+                data: $("#attorneyAppearance").serialize(),
+                complete: function() {
+                    alert("Thanks! We will get back to you as soon as possible.");
+                    window.scrollTo(0, 0);
+
+                    $('#attorneyAppearance input,textarea').val("");
+                }
+            });
+        }
     });
 
     $('#feedbackForm input').change(function() {
